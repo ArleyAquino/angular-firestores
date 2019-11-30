@@ -1,0 +1,50 @@
+h1{
+    text-align: center; 
+ }
+ body, .default{
+     line-height: 1.6em;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+     font-size: 16px;
+     color: #ffffff;
+ }
+ #lateral{
+     width: 400px;
+     align-items: center;
+     border-radius: 5px;
+     background-color: #41123d;
+     padding: 20px;
+     margin: 0 auto;
+ }
+ input[type=text], select{
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+ input[type=password], select{
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+ input[type=submit], select{
+     width: 100%;
+     background-color: #ffcccc;
+     color: #9b3b60;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ input[type=submit]:hover{
+     background: #eb91d7;
+ }
+ 
+ 
