@@ -14,6 +14,15 @@ import { ClosetInferiorForComponent } from './components/closet-inferior-for/clo
 import { ClosetVestidoInfComponent } from './components/closet-vestido-inf/closet-vestido-inf.component';
 import { ClosetVestidoForComponent } from './components/closet-vestido-for/closet-vestido-for.component';
 
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {environment} from '../environments/environment';
+
+import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +39,13 @@ import { ClosetVestidoForComponent } from './components/closet-vestido-for/close
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AppRoutingModule,
+    AngularFireModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
