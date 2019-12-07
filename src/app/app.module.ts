@@ -20,13 +20,17 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {environment} from '../environments/environment';
-
+import {AngularFirestore} from '@angular/fire/firestore';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { CarucelFormalComponent } from './carucel-formal/carucel-formal.component';
 import { CarucelInformalComponent } from './carucel-informal/carucel-informal.component';
 import { CarucelFormalVestidoComponent } from './carucel-formal-vestido/carucel-formal-vestido.component';
 import { CarucelInformalVestidoComponent } from './carucel-informal-vestido/carucel-informal-vestido.component';
+
+//importar
+import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
+//import {AngularFirestore} from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -56,9 +60,11 @@ import { CarucelInformalVestidoComponent } from './carucel-informal-vestido/caru
     AngularFireDatabaseModule,
     AngularFireStorageModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireAuthModule,
+    
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

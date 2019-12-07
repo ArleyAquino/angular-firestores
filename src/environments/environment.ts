@@ -4,14 +4,21 @@
 
 export const environment = {
   production: false,
-  firebaseConfig :{
-    apiKey: "AIzaSyAl8Hv6Ct2C457lA0NEcLUjbS5wfqD0DDg",
-    authDomain: "estudiantes-47e3b.firebaseapp.com",
-    databaseURL: "https://estudiantes-47e3b.firebaseio.com",
-    projectId: "estudiantes-47e3b",
-    storageBucket: "estudiantes-47e3b.appspot.com",
-    messagingSenderId: "588608502914",
-    appId: "1:588608502914:web:8a93019943d15bae32c89b"
+  firebaseConfig:{
+    /*apiKey: "AIzaSyCiY-onn6PiEuu8vksYGGPum1lheODubwI",
+    authDomain: "angular-arqui.firebaseapp.com",
+    databaseURL: "https://angular-arqui.firebaseio.com",
+    projectId: "angular-arqui",
+    storageBucket: "angular-arqui.appspot.com",
+    messagingSenderId: "765595746144",
+    appId: "1:765595746144:web:b7e081e71323ebed6ae805"*/
+    apiKey: "AIzaSyCCuTEac5Eb05YHCz_mUuDWLR4N7_xE_FM",
+    authDomain: "damcrudfirebase-d1469.firebaseapp.com",
+    databaseURL: "https://damcrudfirebase-d1469.firebaseio.com",
+    projectId: "damcrudfirebase-d1469",
+    storageBucket: "damcrudfirebase-d1469.appspot.com",
+    messagingSenderId: "907021135545",
+    appId: "1:907021135545:web:3206fd9ae13a884342f568"
   }
 };
 

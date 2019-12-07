@@ -37,19 +37,19 @@
         <div class="col-sm-12">
             <div id="lateral">
                 <div id="tabla">
-                    <form name="forma">
+                    <form>
                         <table class="datos">
                             <tr>
                                 <td class="columna">Correo electrónico:</td>
-                                <td><input type="text" name="email" value="" /></td>
+                                <td><input  name="email" type="email" [(ngModel)]="user.email" placeholder="Correo@email.com" /></td>
                             </tr>
                             <tr>
                                 <td class="columna">Contraseña:</td>
-                                <td><input type="password" name="password" value="" /></td>
+                                <td><input  name="password" type="password" [(ngModel)]="user.password" placeholder="Contraseña(6 digitos)"/></td>
                             </tr>
                         </table>
                         <div class="align-self-center">  
-                          <input type="submit" value="Enviar"  routerLink="/closet"/>
+                            <input type="submit" value="Enviar"  (click)="onLogin()" />
                         </div>
                     </form>
                 </div>
