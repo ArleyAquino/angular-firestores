@@ -11,6 +11,10 @@ import { ClosetInferiorInfComponent } from './components/closet-inferior-inf/clo
 import { ClosetInferiorForComponent } from './components/closet-inferior-for/closet-inferior-for.component';
 import { ClosetVestidoForComponent } from './components/closet-vestido-for/closet-vestido-for.component';
 import { ClosetVestidoInfComponent } from './components/closet-vestido-inf/closet-vestido-inf.component';
+import { CarucelFormalComponent } from './carucel-formal/carucel-formal.component';
+import { CarucelInformalComponent } from './carucel-informal/carucel-informal.component';
+import { CarucelFormalVestidoComponent } from './carucel-formal-vestido/carucel-formal-vestido.component';
+import { CarucelInformalVestidoComponent } from './carucel-informal-vestido/carucel-informal-vestido.component';
 const routes: Routes = [
   {
     path:'',
@@ -59,7 +63,22 @@ const routes: Routes = [
     path:'closet-vestido-inf',
     component:ClosetVestidoInfComponent
   },
-
+  {
+    path:'carucel-formal',
+    component:CarucelFormalComponent
+  },
+  {
+    path:'carucel-informal',
+    component:CarucelInformalComponent
+  },
+  {
+    path:'carucel-formal-vestido',
+    component:CarucelFormalVestidoComponent
+  },
+  {
+    path:'carucel-informal-vestido',
+    component:CarucelInformalVestidoComponent
+  },
 ];
 
 @NgModule({

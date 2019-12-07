@@ -23,6 +23,10 @@ import {environment} from '../environments/environment';
 
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+import { CarucelFormalComponent } from './carucel-formal/carucel-formal.component';
+import { CarucelInformalComponent } from './carucel-informal/carucel-informal.component';
+import { CarucelFormalVestidoComponent } from './carucel-formal-vestido/carucel-formal-vestido.component';
+import { CarucelInformalVestidoComponent } from './carucel-informal-vestido/carucel-informal-vestido.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import {FormsModule} from '@angular/forms';
     ClosetInferiorInfComponent,
     ClosetInferiorForComponent,
     ClosetVestidoInfComponent,
-    ClosetVestidoForComponent
+    ClosetVestidoForComponent,
+    CarucelFormalComponent,
+    CarucelInformalComponent,
+    CarucelFormalVestidoComponent,
+    CarucelInformalVestidoComponent
   ],
   imports: [
     BrowserModule,
