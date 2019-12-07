@@ -23,9 +23,12 @@ import {environment} from '../environments/environment';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+
 //importar
 import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
 //import {AngularFirestore} from '@angular/fire/firestore';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,8 @@ import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
     ClosetInferiorInfComponent,
     ClosetInferiorForComponent,
     ClosetVestidoInfComponent,
-    ClosetVestidoForComponent
+    ClosetVestidoForComponent,
+
   ],
   imports: [
     BrowserModule,
