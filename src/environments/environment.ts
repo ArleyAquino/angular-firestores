@@ -5,14 +5,20 @@
 export const environment = {
   production: false,
   firebaseConfig:{
-    apiKey: "AIzaSyD9h6T0oSgdrmvFCVne3t--DhBKGteMIT0",
-    authDomain: "damcrudfirebase-f3dd8.firebaseapp.com",
-    databaseURL: "https://damcrudfirebase-f3dd8.firebaseio.com",
-    projectId: "damcrudfirebase-f3dd8",
-    storageBucket: "damcrudfirebase-f3dd8.appspot.com",
-    messagingSenderId: "714682567610",
-    appId: "1:714682567610:web:85286d434a53930a726b83"
-
+    /*apiKey: "AIzaSyCiY-onn6PiEuu8vksYGGPum1lheODubwI",
+    authDomain: "angular-arqui.firebaseapp.com",
+    databaseURL: "https://angular-arqui.firebaseio.com",
+    projectId: "angular-arqui",
+    storageBucket: "angular-arqui.appspot.com",
+    messagingSenderId: "765595746144",
+    appId: "1:765595746144:web:b7e081e71323ebed6ae805"*/
+    apiKey: "AIzaSyCCuTEac5Eb05YHCz_mUuDWLR4N7_xE_FM",
+    authDomain: "damcrudfirebase-d1469.firebaseapp.com",
+    databaseURL: "https://damcrudfirebase-d1469.firebaseio.com",
+    projectId: "damcrudfirebase-d1469",
+    storageBucket: "damcrudfirebase-d1469.appspot.com",
+    messagingSenderId: "907021135545",
+    appId: "1:907021135545:web:3206fd9ae13a884342f568"
   }
 };
 

@@ -20,11 +20,12 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {environment} from '../environments/environment';
-
+import {AngularFirestore} from '@angular/fire/firestore';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
-
-
+//importar
+import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
+//import {AngularFirestore} from '@angular/fire/firestore';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,9 +49,11 @@ import {FormsModule} from '@angular/forms';
     AngularFireDatabaseModule,
     AngularFireStorageModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireAuthModule,
+    
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

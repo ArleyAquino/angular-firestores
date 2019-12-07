@@ -38,23 +38,19 @@
                 
             <div id="lateral">
                 <div id="tabla">
-                    <form>
+                    <form [formGroup]="myForm">
                         <table class="datos">
                             <tr>
-                                <td class="columna">Nombre:</td>
-                                <td><input type="text" name="nombreUsuario" value="" /></td>
-                            </tr>
-                            <tr>
                                 <td class="columna">Correo electrónico:</td>
-                                <td><input type="text" name="email" value="" /></td>
+                                <td><input formControlName="email" name="email" type="email" [(ngModel)]="user.email" placeholder="Correo@email"  /></td>
                             </tr>
                             <tr>
                                 <td class="columna">Contraseña:</td>
-                                <td><input type="password" name="password" value="" /></td>
+                                <td><input formControlName="password" name="password" type="password" [(ngModel)]="user.password" placeholder="contraseña (6 digitos)"  /></td>
                             </tr>
                         </table>
                         <div class="align-self-center">
-                            <input type="submit" value="Enviar" />
+                            <input type="submit" value="Enviar" (click)="create()" (click)="onRegister()" />
                         </div>
                     </form>
                 </div>
