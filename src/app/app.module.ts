@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './components/index/index.component';
 import { RegistrateComponent } from './components/registrate/registrate.component';
 import { IniciarsesionComponent } from './components/iniciarsesion/iniciarsesion.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { ClosetComponent } from './components/closet/closet.component';
 import { ClosetSuperiorInfComponent } from './components/closet-superior-inf/closet-superior-inf.component';
 import { ClosetSuperiorForComponent } from './components/closet-superior-for/closet-superior-for.component';
@@ -39,6 +41,7 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AppRoutingModule,
     AngularFireModule,

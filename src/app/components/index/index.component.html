@@ -39,14 +39,17 @@
   <div class=" text-center ">
     <h1 style="margin-bottom:0; color: #41123d">Atuendo del día</h1>   
   </div>
-  <div class="container text-center" > 
-    <div class=" row justify-content-center">
-      <div class="col-12">
-      <img src="../../../assets/maniquis.png" class="w-50" style="height: 100%;" >      
-      
+  <div class="container text-center"  >
+    <div class="row">
+      <div class="col-md-12 py-3">
+        <ngb-carousel *ngIf="event_list">
+          <ng-template ngbSlide *ngFor="let event of event_list">
+            <img style="height: 12cm;" [src]="event.img" alt="Random slide">
+          </ng-template>
+        </ngb-carousel>
       </div>
     </div>
-  </div>  
+  </div>
 </body>
 
 </html>
