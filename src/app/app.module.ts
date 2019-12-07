@@ -23,6 +23,10 @@ import {environment} from '../environments/environment';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+import { CarucelFormalComponent } from './carucel-formal/carucel-formal.component';
+import { CarucelInformalComponent } from './carucel-informal/carucel-informal.component';
+import { CarucelFormalVestidoComponent } from './carucel-formal-vestido/carucel-formal-vestido.component';
+import { CarucelInformalVestidoComponent } from './carucel-informal-vestido/carucel-informal-vestido.component';
 
 //importar
 import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
@@ -42,7 +46,10 @@ import {AngularFireAuthModule, AngularFireAuth} from "@angular/fire/auth";
     ClosetInferiorForComponent,
     ClosetVestidoInfComponent,
     ClosetVestidoForComponent,
-
+    CarucelFormalComponent,
+    CarucelInformalComponent,
+    CarucelFormalVestidoComponent,
+    CarucelInformalVestidoComponent
   ],
   imports: [
     BrowserModule,
