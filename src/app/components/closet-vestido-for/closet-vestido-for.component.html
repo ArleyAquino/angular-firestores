@@ -35,6 +35,27 @@
                 </div>
               </nav>
               <div class=" pt-3 text-center">
+                  <!--agregar imagen-->
+                  <div class="contenedor">
+                    <div class="contenedor_formulario">
+                      <h3 class="is-size-1">Subir nueva prenda</h3>
+                      <p class="download" *ngIf="finalizado">URL de descarga: <a href="{{URLPublica}}" target="_blank">Descargar</a></p>
+                      <form [formGroup]="archivoForm" (ngSubmit)="subirArchivo()">
+                        <div class="file has-name is-boxed">
+                          <label class="file-label">
+                            <input class="file-input" type="file" formControlName="archivo"  accept=".png,.jpg" (change)="cambioArchivo($event)">
+                            <span class="file-name">
+                            </span>
+                          </label>
+                        </div>
+                        <hr>
+                        <progress *ngIf="porcentaje > 0 && porcentaje < 100" class="progress is-large is-success" value="{{porcentaje}}" max="100">{{porcentaje}}%</progress>
+                        <button [ngClass]="{'button': true, 'is-success': true, 'is-large': true, 'is-loading': porcentaje > 0 && porcentaje < 100}" [disabled]="!archivoForm.valid && (porcentaje > 0 && porcentaje < 100)">Subir archivo</button>
+                      </form>
+                    </div>
+                  </div>
+                    <!--cierre input imagen -->
+
                 <h1 style="margin-bottom:0; color: #41123d; font-weight: bold">Prenda vestido formal</h1>
                 <br>
                 
