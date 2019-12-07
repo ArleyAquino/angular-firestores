@@ -12,6 +12,8 @@ export class FirebaseStorageService {
 
   //Tarea para subir archivo
   public tareaCloudStorage(nombreArchivo: string, datos: any) {
+    const id= Math.random().toString(36).substring(2);
+    nombreArchivo= `carucel-informal/${id}`;
     return this.storage.upload(nombreArchivo, datos);
   }
 

@@ -57,6 +57,7 @@ export class ClosetSuperiorInfComponent implements OnInit {
 
     referencia.getDownloadURL().subscribe((URL) => {
       this.URLPublica = URL;
+      console.log(this.URLPublica);
 
     });
   }

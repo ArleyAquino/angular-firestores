@@ -12,4 +12,8 @@ export class ClosetInferiorForComponent implements OnInit {
   ngOnInit() {
   }
 
+  onUpload(event){
+    console.log('subir',event);
+  }
+
 }

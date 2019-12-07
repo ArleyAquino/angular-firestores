@@ -4,15 +4,14 @@
 
 export const environment = {
   production: false,
-  firebaseConfig:{
-    apiKey: "AIzaSyD9h6T0oSgdrmvFCVne3t--DhBKGteMIT0",
-    authDomain: "damcrudfirebase-f3dd8.firebaseapp.com",
-    databaseURL: "https://damcrudfirebase-f3dd8.firebaseio.com",
-    projectId: "damcrudfirebase-f3dd8",
-    storageBucket: "damcrudfirebase-f3dd8.appspot.com",
-    messagingSenderId: "714682567610",
-    appId: "1:714682567610:web:85286d434a53930a726b83"
-
+  firebaseConfig :{
+    apiKey: "AIzaSyAl8Hv6Ct2C457lA0NEcLUjbS5wfqD0DDg",
+    authDomain: "estudiantes-47e3b.firebaseapp.com",
+    databaseURL: "https://estudiantes-47e3b.firebaseio.com",
+    projectId: "estudiantes-47e3b",
+    storageBucket: "estudiantes-47e3b.appspot.com",
+    messagingSenderId: "588608502914",
+    appId: "1:588608502914:web:8a93019943d15bae32c89b"
   }
 };
 
